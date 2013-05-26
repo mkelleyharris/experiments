@@ -9,6 +9,8 @@
 #ifndef _strategy_h
 #define _strategy_h
 
+#include <memory>
+
 class Strategy
 {
 public:
@@ -40,14 +42,14 @@ class Context
 {
 public:
     Context(Strategy* strategy)
+    : strat(strategy)
     {
-        strat = strategy;
     }
     
     int execute(int a, int b) { return strat->execute(a, b); }
     
 private:
-    Strategy* strat;
+    std::shared_ptr<Strategy> strat;
 };
 
 #endif

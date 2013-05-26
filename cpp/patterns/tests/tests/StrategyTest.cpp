@@ -17,16 +17,14 @@ BOOST_AUTO_TEST_SUITE( patterns_test_suite )
 
 BOOST_AUTO_TEST_CASE( test_strategyAdd )
 {
-    Add add;
-    Context context(&add);
+    Context context(new Add());
     BOOST_CHECK_EQUAL(context.execute(1, 2), 3);
     BOOST_CHECK_EQUAL(context.execute(3, 5), 8);
 }
 
 BOOST_AUTO_TEST_CASE( test_strategySubtract )
 {
-    Subtract subtract;
-    Context context(&subtract);
+    Context context(new Subtract());
     BOOST_CHECK_EQUAL(context.execute(1, 2), -1);
     BOOST_CHECK_EQUAL(context.execute(3, 5), -2);
     BOOST_CHECK_EQUAL(context.execute(3, 1), 2);
@@ -34,8 +32,7 @@ BOOST_AUTO_TEST_CASE( test_strategySubtract )
 
 BOOST_AUTO_TEST_CASE( test_strategyMutliply )
 {
-    Multiple multiple;
-    Context context(&multiple);
+    Context context(new Multiple());
     BOOST_CHECK_EQUAL(context.execute(1, 2), 2);
 }
 
