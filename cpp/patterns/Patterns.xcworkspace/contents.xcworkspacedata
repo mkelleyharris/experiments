@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:tests"
+      name = "tests">
+      <Group
+         location = "group:tests"
+         name = "tests">
+         <FileRef
+            location = "group:main.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:tests.1">
+         </FileRef>
+         <FileRef
+            location = "group:StrategyTest.cpp">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:tests.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:Patterns"
+      name = "Patterns">
+      <Group
+         location = "group:Patterns"
+         name = "Patterns">
+         <FileRef
+            location = "group:main.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:Patterns.1">
+         </FileRef>
+         <FileRef
+            location = "group:strategy.h">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Patterns.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>
