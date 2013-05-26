@@ -32,4 +32,11 @@ BOOST_AUTO_TEST_CASE( test_strategySubtract )
     BOOST_CHECK_EQUAL(context.execute(3, 1), 2);
 }
 
+BOOST_AUTO_TEST_CASE( test_strategyMutliply )
+{
+    Multiple multiple;
+    Context context(&multiple);
+    BOOST_CHECK_EQUAL(context.execute(1, 2), 2);
+}
+
 BOOST_AUTO_TEST_SUITE_END()

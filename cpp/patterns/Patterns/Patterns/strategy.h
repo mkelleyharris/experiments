@@ -29,6 +29,13 @@ public:
     
 };
 
+class Multiple : public Strategy
+{
+public:
+    int execute(int a, int b) { return a * b; }
+    
+};
+
 class Context
 {
 public:
