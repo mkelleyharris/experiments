@@ -1,4 +1,4 @@
-TemperatureMonitor  C++ demo of S.O.L.I.D. OO design Principles.  
+TemperatureMonitor: A C++ demo of some S.O.L.I.D. object-oriented design Principles.  
 Michael Kelley Harris kelley@kelleyharris.com
 
 TemperatureMonitor is a demo project to show how to make our business logic more testable, and extendable. The monitor uses a sensor object and a display object, both via abstract interfaces.
