@@ -7,6 +7,7 @@
 	
 #include "./TemperatureMonitor.hpp"
 #include "./TemperatureSensor.hpp"
+#include "./TemperatureSensorFake.hpp"
 #include "./TemperatureDisplayFake.hpp" 
 #include "./TemperatureStatus.hpp" 
 
