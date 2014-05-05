@@ -20,6 +20,24 @@ class TestLists(unittest.TestCase):
     self.assertEqual([0, 1, 2, 3, 4], l1)
     self.assertEqual([1, 4, 9], [x**2 for x in range(1,4)])
 
+  def test_sortAscending(self):
+	listOrig = [3, 1, 2]
+	listOrig.sort()
+	self.assertEqual([1, 2, 3], listOrig)
+	
+  def test_sortDescending(self):
+	listOrig = [3, 1, 2]
+	listOrig.sort(reverse=True)
+	self.assertEqual([3, 2, 1], listOrig)
+	
+  def test_sortedAscending(self):
+	listOrig = [3, 1, 2]
+	self.assertEqual([1, 2, 3], sorted(listOrig))
+	
+  def test_sortedDescending(self):
+	listOrig = [3, 1, 2]
+	self.assertEqual([3, 2, 1], sorted(listOrig, reverse=True))
+
  
 if __name__ == '__main__':
   unittest.main()
