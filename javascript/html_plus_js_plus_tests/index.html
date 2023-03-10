@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script type='text/javascript' src="./code.js"></script>
+<!--<script type=module src="code.js"></script>-->
+
+<title>Demo HTML + JS + Unit Tests</title>
+</head>
+
+<body>
+  <h1>Demo HTML + JS + Unit Tests</h1>
+  <p>HTML and unit tests both try to use same code.js. If the file exports js functions/class, it works in test, but not html. Without exports, it works in html but not in tests. What's the solution to work in both?</p>
+  <hr>
+
+  <script>
+    document.write("Contact: " + " " + getContact() + '<br>'); 
+    document.write("Copyright: " + " " + OtherInfo.getCopyrightDate()); 
+  </script>
+  
+  </body>
+</html>
