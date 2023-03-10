@@ -10,5 +10,4 @@
       }
   }
 
-//export{getContact, OtherInfo};
-
+export{getContact, OtherInfo};

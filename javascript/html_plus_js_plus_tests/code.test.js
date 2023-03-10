@@ -1,4 +1,4 @@
-'use stric';
+'use strict';
 
 import { getContact, OtherInfo} from './code.js'
 
