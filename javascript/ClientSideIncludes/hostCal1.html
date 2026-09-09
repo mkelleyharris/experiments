@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script type="text/javascript" src="globals.js"></script>
+
+<h1>Host 2</h1>
+
+<!--
+<script type="text/javascript">
+{
+  "@context": "http://www.schema.org",
+  "@type": "Event",
+  "name": "Launch Party",
+  "url": "http://www.example.com/launch-party",
+  "description": "We're excited to announce the launch party for our newest app!",
+  "startDate": "10/05/2015 12:00PM",
+  "endDate": "10/05/2015 02:00PM",
+  "location": {
+    "@type": "Place",
+    "name": "Joe's Party Palace",
+    "sameAs": "http://www.example.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "100 Main Street",
+      "addressLocality": "Seattle",
+      "addressRegion": "WA",
+      "postalCode": "98101",
+      "addressCountry": "USA"
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "description": "an offer description",
+    "url": "http://www.example.com",
+    "price": "$9.99"
+  }
+}
+</script>
+-->
+
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<script type="text/javascript">
+var eventData = $.getJSON( "events.json")
+	console.log( "head success 1" );
+	console.log( eventData );
+  </script>
+
+  <script type="text/javascript">
+$.getJSON('events.json', function(data) {
+    //do stuff with your data here
+	alert('wow head test');
+	    document.write("wow head test")
+		console.log( "head success 2" );
+	
+});
+  </script>
+
+</head>
+<body>
+  <script type="text/javascript">
+    document.write('<h3>' + '&copy; ' + examples.globals.copyrightDate() + '</h3>');
+    document.write('<h3>' + '&copy; ' + cpDate + '</h3>');
+  </script>
+
+<br><br>
+<script type="text/javascript">
+var eventData = $.getJSON( "events.json")
+	console.log( "body success" );
+  </script>
+
+<br><br>
+
+  <script type="text/javascript">
+$.getJSON('events.json', function(data) {
+    //do stuff with your data here
+alert('wow body test');
+    document.write("wow body test")
+});
+  </script>
+
+
+<!--
+var events = [
+{
+  "@context": "http://schema.org",
+  "@type": "Event",
+  "name": "Certified ScrumMaster (CSM)",
+  "startDate": "2016-12-15",
+  "location": {
+     "@type": "Place",
+     "name": "Blankspaces",
+     "address": "Santa Monica, CA"
+  },
+  "offers": {
+     "@type": "Offer",
+     "url": "https://www.eventbrite.com/e/certified-scrummaster-csm-course-in-santa-monica-ca-dec-15-16-2016-tickets-27671410935"
+  }
+},
+{
+  "@context": "http://schema.org",
+  "@type": "Event",
+  "name": "Certified ScrumMaster (CSM)",
+  "startDate": "2016-12-17",
+  "location": {
+     "@type": "Place",
+     "name": "Blankspaces",
+     "address": "Santa Monica, CA"
+  },
+  "offers": {
+     "@type": "Offer",
+     "url": "https://www.eventbrite.com/e/certified-scrummaster-csm-course-in-santa-monica-dec-17-18-2016-weekend-tickets-27671454064"
+  }
+}
+];
+</script>
+-->
+
+<!--Now you can loop through the elements of this array:-->
+
+<script type="text/javascript">
+for (var i = 0; i < events.length; i++) {
+    var event = events[i];
+    <!--alert(event.title);-->
+    document.write('<h3>' + event.startDate + ', ' + event.name + ', ' + event.location.address + '<h3>')
+}
+</script>
+
+<br><br>
+
+<div itemscope itemtype="http://schema.org/Event">
+<u>
+<a itemprop="url" href="https://www.eventbrite.com/e/certified-scrummaster-csm-course-in-santa-monica-ca-dec-15-16-2016-tickets-27671410935"> </a>
+  <meta itemprop="startDate" content="2016-12-15">
+  <meta itemprop="endDate" content="2016-12-16">
+  <a href="https://www.eventbrite.com/e/certified-scrummaster-csm-course-in-santa-monica-ca-dec-15-16-2016-tickets-27671410935"> Dec. 15-16, 2017, Certified ScrumMaster, Santa Monica, CA</a>
+  <span itemprop="name" content="Certified ScrumMaster"/>
+  <span itemprop="description" content="CSM course"/>
+<br>
+
+<!-->
+  <div class="location" itemprop="location" itemscope itemtype="http://schema.org/Place">
+    <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="addressLocality">Santa Monica</span>,  <span itemprop="addressRegion">CA</span></a>
+        </span>
+	    <span itemprop="name" content="Blankplaces"</span>
+  </div>
+-->
+  <meta itemprop="location" content="my place"/>
+  <meta itemprop="performer" content="Kelley Harris"/>
+</u>
+<br>
+</div>
+
+
+<script language="Javascript">
+document.write("Last modified: " + document.lastModified +"");
+</SCRIPT>
+
+
+
+</body>
+</html>

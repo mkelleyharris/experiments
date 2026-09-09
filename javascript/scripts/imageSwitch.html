@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function changeImage()
+{
+element=document.getElementById('myimage')
+if (element.src.match("bulbon"))
+  {
+  element.src="pic_bulboff.gif";
+  }
+else
+  {
+  element.src="pic_bulbon.gif";
+  }
+}
+
+function changeDescription()
+{
+element=document.getElementById('description');	
+if (element.style.color=='black')
+  {
+     element.style.color='red';
+     element.innerHTML ='Click the light bulb to turn off the light';
+  }
+else
+  {
+	 element.style.color='black';
+     element.innerHTML ='Click the light bulb to turn on the light';
+  }
+}
+
+function changeAll()
+{
+    changeImage();
+    changeDescription();		
+}
+
+function validateInput()
+{
+var x=document.getElementById("inputNumber").value;
+if(x==""||isNaN(x))
+	{
+	alert("Please enter a number. You entered: " + x);
+	}
+}
+
+</script>
+</head>
+<body>
+
+
+<img id="myimage" onclick="changeAll()" src="pic_bulboff.gif" width="100" height="180">
+
+<p id="description" style.color='black'>Click the light bulb to turn on the light</p>
+
+<p>Input a number.</p>
+<input id="inputNumber" type="text">
+<button onClick="validateInput()">Click to validate number</button>
+
+</body>
+</html>

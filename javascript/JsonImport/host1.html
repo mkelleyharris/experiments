@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="scripts/sc_globals.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<!--
+<script type="text/javascript" src="scripts/require.js"></script>
+<script type="text/javascript" src="scripts/events.js"></script>
+<script type="text/javascript" src="eventsJ.js"></script>
+<script type="text/javascript" src="eventsJSON.json"></script>
+
+-->
+
+<script>
+var theJSONdata = null;
+</script>
+
+<script>
+
+function updateTheEvents() {
+  console.log("updateTheEvents called.");
+  console.log(theJSONdata.eventsJSON[0]);
+  //document.getElementById("demo") = "New stuff";
+
+  var eventContent = "";
+
+  if (theJSONdata) {
+	for (i = 0; i < theJSONdata.eventsJSON.length; i++) {
+      eventContent += "<p>" + theJSONdata.eventsJSON[i].date 
+					+ ' ' + theJSONdata.eventsJSON[i].location 
+					+ ' ' + theJSONdata.eventsJSON[i].class + "</p>";
+    }
+  }
+
+  //eventContent = "<p>" + theJSONdata.eventsJSON[0].date + ' ' + theJSONdata.eventsJSON[0].location + ' ' + theJSONdata.eventsJSON[0].class + "</p>";
+  document.getElementById("demo").innerHTML	= eventContent;	
+}
+
+//theJSONdata = {};
+
+function jsonCallback(json){
+  //var theJSONdata = json;
+  theJSONdata = json;
+  console.log(json);
+  console.log(theJSONdata);
+  console.log(theJSONdata.eventsJSON[0]);
+  updateTheEvents();
+
+}
+
+$.ajax({
+  url: "http://www.sourcecell.com/scripts/eventsJSON.json",
+  dataType: "jsonp",
+});
+</script>
+
+<!--
+<script>
+
+var dataJ
+require(['json!eventsJ.json'], function(dataJ){
+  var myEvents = JSON.parse(dataJ);
+    document.write('<p>' + "dataJ via myEvents: " + myEvents + '</p>');
+})
+</script>
+-->
+
+
+<!--
+<script type="text/javascript">
+	document.write('<h3>' + 'TheEvents :" + events.getEvents()[0] + '</h3>');
+</script>
+-->
+
+
+
+
+<!--
+<script type="text/javascript">
+	var json = require('eventsJ.json');
+
+	document.write('<p>' + "Test" + '</p>');
+	document.write('<p>' + json + '</p>');
+
+</script>
+-->
+
+<!--
+<script>
+var eventsH = [
+{
+	"date" : "Jan 8, 2017",
+	"class" : "CSM",
+	"location" : "Sunnyvale"
+},
+
+{
+	"date" : "Jan 12, 2017",
+	"class" : "CSM",
+	"location" : "Palo Alto"
+},
+
+{
+	"date" : "Jan 24, 2017",
+	"class" : "CSM",
+	"location" : "Sacramento"
+}
+];
+
+//document.write(eventsH[0].date + ' ' + eventsH[0].location + '<br>');
+//document.write(eventsH[1].date + ' ' + eventsH[1].location);
+
+document.write('<p>' + "Events from Head var: " + '</p>');
+
+for (i = 0; i < eventsH.length; i++) {
+    document.write(eventsH[i].date + ' ' + eventsH[i].location + '<br>');
+}
+
+</script>
+-->
+
+<!--
+<script>
+var script = $("<script />", {
+    src: "http://www.sourcecell.com/scripts/eventsJSON.json",
+    type: "application/json"
+  }
+);
+
+$("head").append(script);
+</script>
+-->
+
+
+
+
+</head>
+<body>
+	
+<a href="index.html"><img alt="" src="images/logo_SourceCell_OpaqueWhite_3Stacks.png" alt="SourceCell" height="30" width="222"></a>
+
+<br>
+
+<script>
+  document.write(sc_globals.getSourceCellLogoForWhiteBackgroundHTML());
+  document.write('<br>');
+  document.write(sc_globals.getSourceCellLogoForBlackBackgroundHTML());
+</script>
+
+<h1>Host 1</h1>
+
+<!--
+<script>
+
+document.write('<p>' + "Events info from eventsJ.js: " + '</p>');
+
+var myEventsJ = eventsJ.getEventsArrayObj();
+document.write(myEventsJ);
+document.write("Events Num: " + myEventsJ.eventsJ.length);
+
+document.write('<br><br>' + "Events from eventsJ.js" +'<br>');
+
+for (i = 0; i < myEventsJ.eventsJ.length; i++) {
+	document.write(myEventsJ.eventsJ[i].date + ' ' + myEventsJ.eventsJ[i].location + '<br>');
+}
+
+</script>
+
+<script>
+$.getJSON('http://www.sourcecell.com/scripts/eventsJSON.json?jsonp=?', function(result){
+    $.each(result, function(i, field){
+        $("div").append(field + " ");
+    });
+});
+</script>
+-->
+
+<!--
+<script>
+$.getJSON( "http://sourcecell.com/scripts/eventsJSON.json", function( json3 ) {
+  console.log( "JSON Data: " + json3.eventsJSON[0].date );
+ });
+</script>
+-->
+
+<!--
+<script>
+
+    document.write('<p>' + "Events info from events.json: " + '</p>');
+</script>
+
+<script>
+//var tData = JSON.parse(eventsJSON.json);
+//document.write('<p>' + "eventsJSON data: " + tData[0] + '</p>');
+
+	var mydata = JSON.parse(data);
+	alert(mydata[0].date);
+	alert(mydata[0].location);
+	
+</script>
+
+<script>
+    document.write('<p>' + "Use require with extra function:" + '</p>');
+require(['json!eventsJSON.json'], function(data){
+  document.write('<p>' + "data: " + data[0] + '</p>');
+})
+</script>
+
+
+<script>
+    document.write('<p>' + "Use require direct: " + '</p>');
+
+	var myJson = require(["eventsJSON.json"]);
+	//var userRepositoryInstance = new myJson(); 
+	//console.log('Require:', userRepositoryInstance);
+	
+	//var myData = require(["eventsJ.json"]);
+	//console.log('Require:', myData);
+
+	document.write('<p>' + "Test" + '</p>');
+	var myEventsParsed = JSON.parse(myJson);
+	console.log(myEventsParsed);
+	document.write('<p>' + myEventsParsed + '</p>');
+	
+    //var myEvents = JSON.parse(myJson);
+    //document.write('<p>' + "dataJ via myEvents: " + myEvents + '</p>');
+
+	//document.write('<p>' + userRepositoryInstance.eventsJArray + '</p>');
+
+
+for (i = 0; i < eventsJArray.length; i++) {
+	document.write(eventsJArray[i].date + ' ' + eventsJArray[i].location + '<br>');
+}
+
+</script>
+-->
+
+
+<!--
+<script>
+var eventsJSON = { "date": "Jan 8", "location" : "SunnyVale"};
+
+var eventsObj = JSON.parse(eventsJSON);
+
+document.write(eventsObj.date);
+
+</script>
+-->
+
+
+
+<!--
+<script>
+$.getJSON("http://www.sourcecell.com/scripts/eventsJSON.json", function (data) {
+      console.log(data);
+	});
+</script>
+-->
+	
+<script type="text/javascript">
+
+   document.write('<br><br>' + "Some Globals. TODO add more." +'<br>');
+
+   document.write('<h1>' + '&copy; ' + sc_globals.getCopyrightDate() + '</h1>');
+    //document.write('<h3>' + '&copy; ' + sc_globals.getCopyrightDate() + '</h3>');
+    //document.write('<p align=right>' + '<h3>' + '&copy; ' + sc_globals.getCopyrightDate() + ' SourceCell' +'</h3>' + '</p>');
+    //document.write("<p align='center'><h3>&copy;" + sc_globals.getCopyrightDate() + " SourceCell" + "</h3></p>");
+   document.write('<p align=center>' + sc_globals.getCopyrightDateHTML() + '</p>');
+</script>
+
+<script>
+	document.write('<p>' + "the JSON Data" + '</p>');
+	//document.write('<p>' + theJSONdata.eventsJSON[0] + '</p>');
+	if (theJSONdata) {
+		console.log(theJSONdata.eventsJSON[0]);
+	}
+</script>
+
+
+<dev id="demo">
+<p>(course info goes here)</p>
+</dev>
+	
+	
+
+
+
+</body>
+</html>
