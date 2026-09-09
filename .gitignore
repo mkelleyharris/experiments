@@ -1,3 +1,4 @@
 
 #XCode IDE related
 xcuserdata/
+*.dSYM/
