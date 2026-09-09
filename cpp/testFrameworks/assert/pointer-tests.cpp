@@ -1,9 +1,7 @@
 
-// pointer-tests
+// pointer-tests.cpp
 
-// compile: clang++ pointer-tests.cpp -o ptest
-// compile and run: clang++ pointer-tests.cpp -o ptest && ./ptest
-// run:  ./ptest
+// See main-runner.cpp for build information
 
 
 #include <iostream>
@@ -51,16 +49,10 @@ void testMixOfPreceddence() {
 }
 
 
-int main() {
-
-    std::cout << "pointer-tests using simple assert function. " << std::endl;  
-
+void testSuitePointers() {
     testDereferencingPoineterToArray();
     testMixOfRefereningAddOne();
     testIncrementingValue();
     testMixOfRefereningAndIncrerment();
     testMixOfPreceddence();
-
-    std::cout << "pointer-tests all passed no asserts fired" << std::endl; 
-    return 0;
 }
