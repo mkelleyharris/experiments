@@ -2,7 +2,9 @@ CC=g++
 CFLAGS=-c -Wall
 LDFLAGS=
 # Add path to your Boost directory
-INCLUDES="/usr/local/boost/boost_1_53_0"
+# INCLUDES="/usr/local/boost/boost_1_92_0"
+# INCLUDES="/usr/local/boost/boost_1_92_0"
+INCLUDES="/usr/local/boost/test/unit_test.hpp>"
 SOURCES=runner.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
 EXECUTABLE=runner

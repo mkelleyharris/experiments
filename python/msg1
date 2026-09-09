@@ -1,0 +1,294 @@
+esymbolicationd
+CODE SIGNING: cs_invalid_page(0x1000): p=351[ksadmin] clearing CS_VALID
+CODE SIGNING: cs_invalid_page(0x1000): p=355[ksadmin] clearing CS_VALID
+CODE SIGNING: cs_invalid_page(0x1000): p=356[ksadmin] clearing CS_VALID
+CODE SIGNING: cs_invalid_page(0x1000): p=357[ksadmin] clearing CS_VALID
+CODE SIGNING: cs_invalid_page(0x1000): p=359[ksadmin] clearing CS_VALID
+         0 [Level 7] [ReadUID 0] [Facility messagetracer] [com.apple.message.domain com.apple.kernel.external_modification] [com.apple.message.signature com.box.sync.ico(B83B6698-5EB3-310C-9CC2-9094E7D06BF3)] [com.apple.message.signature2 Finder(5AF2416D-6AF0-386F-86D5-A276C74780E6)] [com.apple.message.result noop] 
+         0 [Level 7] [ReadUID 0] [Facility messagetracer] [com.apple.message.domain com.apple.kernel.external_modification] [com.apple.message.signature Google Drive Ico(81DDB023-CC5F-423C-3EB6-6CE39016BCFA)] [com.apple.message.signature2 Finder(5AF2416D-6AF0-386F-86D5-A276C74780E6)] [com.apple.message.result noop] 
+fsevents: watcher dbfseventsd (pid: 382) - Using /dev/fsevents directly is unsupported.  Migrate to FSEventsFramework
+         0 [Level 7] [ReadUID 0] [Facility messagetracer] [com.apple.message.domain com.apple.kernel.external_modification] [com.apple.message.signature FinderLoadBundle(3B5F73F3-18A7-8797-F77D-9DEF5C595CA0)] [com.apple.message.signature2 Finder(5AF2416D-6AF0-386F-86D5-A276C74780E6)] [com.apple.message.result noop] 
+CODE SIGNING: cs_invalid_page(0x1000): p=393[ksadmin] clearing CS_VALID
+MacAuthEvent en1   Auth result for: f8:ed:a5:b3:0d:90  MAC AUTH succeeded
+wlEvent: en1 en1 Link UP virtIf = 0
+wl0: Roamed or switched channel, reason #8, bssid f8:ed:a5:b3:0d:90
+en1: BSSID changed to f8:ed:a5:b3:0d:90
+en1::IO80211Interface::postMessage bssid changed
+AirPort: RSN handshake complete on en1
+MacAuthEvent en1   Auth result for: f8:ed:a5:b3:0d:90  MAC AUTH succeeded
+wlEvent: en1 en1 Link UP virtIf = 0
+wl0: Roamed or switched channel, reason #8, bssid f8:ed:a5:b3:0d:90
+en1: BSSID changed to f8:ed:a5:b3:0d:90
+en1::IO80211Interface::postMessage bssid changed
+AirPort: RSN handshake complete on en1
+CODE SIGNING: cs_invalid_page(0x1000): p=454[GoogleSoftwareUp] clearing CS_VALID
+nspace-handler-set-snapshot-time: 1399307699
+nspace-handler-set-snapshot-time: 1399307731
+nspace-handler-set-snapshot-time: 1399307731
+CODE SIGNING: cs_invalid_page(0x1000): p=493[GoogleSoftwareUp] clearing CS_VALID
+nspace-handler-set-snapshot-time: 1399311367
+nspace-handler-set-snapshot-time: 1399311368
+Sandbox: coreaudiod(272) deny file-read-data /Library/Audio/Plug-Ins/Components/EZdrummer.component
+Sandbox: coreaudiod(272) deny file-read-metadata /Library/Audio/Plug-Ins/Components/EZdrummer.component/Contents
+Sandbox: coreaudiod(272) deny file-read-metadata /Library/Audio/Plug-Ins/Components/EZdrummer.component
+Sandbox: coreaudiod(272) deny file-read-data /Library/Audio/Plug-Ins/Components/Flip4Mac WMA Import.component
+Sandbox: coreaudiod(272) deny file-read-metadata /Library/Audio/Plug-Ins/Components/Flip4Mac WMA Import.component/Contents
+Sandbox: coreaudiod(272) deny file-read-metadata /Library/Audio/Plug-Ins/Components/Flip4Mac WMA Import.component
+CODE SIGNING: cs_invalid_page(0x1000): p=574[GoogleSoftwareUp] clearing CS_VALID
+nspace-handler-set-snapshot-time: 1399315003
+nspace-handler-set-snapshot-time: 1399315003
+Sandbox: sandboxd(588) deny mach-lookup com.apple.coresymbolicationd
+CODE SIGNING: cs_invalid_page(0x1000): p=593[GoogleSoftwareUp] clearing CS_VALID
+nspace-handler-set-snapshot-time: 1399318639
+nspace-handler-set-snapshot-time: 1399318639
+vmci: Loaded @ 0xffffff7f9983ccf6: Info 0xffffff7f99848a80 Name com.vmware.kext.vmci Version 90.4.18 build-1040386 at Mar  4 2013 16:02:55
+vmci: Initializing module.
+vmci: VMCI: shared components initialized.
+vmci: VMCI: host components initialized.
+vmci: Module initialized.
+vmci: Begin helper queue thread.
+vsock: Loaded @ 0xffffff7f9984dbfe: Info 0xffffff7f99859040 Name com.vmware.kext.vsockets Version 90.4.23 build-1040386 at Mar  4 2013 16:03:01
+vsock: Initializing module...
+vsock: Begin workloop.
+vsock: Module initialized.
+vmnet: Loaded @ 0xffffff7f9985dce0: Info 0xffffff7f99866060 Name com.vmware.kext.vmnet Version 0104.03.86 build-1040386 at Mar  4 2013 16:03:06
+vmnet: Initializing module.
+vmnet: VMNet_Start allocated gOSMallocTag.
+vmnet: VMNet_Start allocated vnetBigLock.
+vmnet: Module initialized.
+vmmon: Loaded @ 0xffffff7f99867c2d: Info 0xffffff7f99872060 Name com.vmware.kext.vmx86 Version 0104.03.86 build-1040386 at Mar  4 2013 16:02:48
+vmmon: Instrumenting bug 151304...
+vmmon: Cycles 62
+vmmon: Timer thread started.
+vmmon: Module initialized.
+vmnet: VNetUserIf_Create: created userIf at 0xffffff802e89e600.
+vmnet: VMNetConnect: returning port 0xffffff802e89e600
+vmnet: Hub 0 does not exist, allocating memory.
+vmnet: Allocated hub 0xffffff80362ac000 for hubNum 0.
+vmnet: VMNET_SO_BINDTOHUB: port: paddr 00:50:56:e6:22:f1
+vmnet: Hub 0
+vmnet: 	Port 0
+vmnet: bridge-en1: media 80 dev 0xffffff802ae17a18 family 2
+vmnet: bridge-en1: wireless interface detected.
+vmnet: bridge-en1: up
+vmnet: bridge-en1: attached
+vmnet: VNetUserIfFree: freeing userIf at 0xffffff802e89e600.
+vmnet: VNetUserIf_Create: created userIf at 0xffffff803526ca00.
+vmnet: VMNetConnect: returning port 0xffffff803526ca00
+vmnet: Hub 1 does not exist, allocating memory.
+vmnet: Allocated hub 0xffffff80362a9000 for hubNum 1.
+vmnet: VMNET_SO_BINDTOHUB: port: paddr 00:50:56:f8:2b:7c
+vmnet: Hub 1
+vmnet: 	Port 0
+vmnet: VNetUserIfFree: freeing userIf at 0xffffff803526ca00.
+vmnet: netif-vmnet1: Adding protocol 2.
+vmnet: netif-vmnet1: SIOCSIFFLAGS: 0x8863
+vmnet: netif-vmnet1: SIOCSIFFLAGS: 0x8863
+vmnet: VNetUserIf_Create: created userIf at 0xffffff803526f600.
+vmnet: VMNetConnect: returning port 0xffffff803526f600
+vmnet: VMNET_SO_BINDTOHUB: port: paddr 00:50:56:e7:4c:62
+vmnet: Hub 1
+vmnet: 	Port 0
+vmnet: 	Port 1
+vmnet: VNetUserIf_Create: created userIf at 0xffffff8029db0400.
+vmnet: VMNetConnect: returning port 0xffffff8029db0400
+vmnet: Hub 8 does not exist, allocating memory.
+vmnet: Allocated hub 0xffffff80362a4000 for hubNum 8.
+vmnet: VMNET_SO_BINDTOHUB: port: paddr 00:50:56:e9:a2:f6
+vmnet: Hub 8
+vmnet: 	Port 0
+vmnet: VMNetSetopt: Set link state UP
+vmnet: VNetUserIf_Create: created userIf at 0xffffff802e89e600.
+vmnet: VMNetConnect: returning port 0xffffff802e89e600
+vmnet: VMNET_SO_BINDTOHUB: port: paddr 00:50:56:f2:c2:ec
+vmnet: Hub 8
+vmnet: 	Port 0
+vmnet: 	Port 1
+vmnet: VNetUserIfFree: freeing userIf at 0xffffff802e89e600.
+vmnet: netif-vmnet8: Adding protocol 2.
+vmnet: netif-vmnet8: SIOCSIFFLAGS: 0x8863
+vmnet: netif-vmnet8: SIOCSIFFLAGS: 0x8863
+vmnet: VNetUserIf_Create: created userIf at 0xffffff8035276e00.
+vmnet: VMNetConnect: returning port 0xffffff8035276e00
+vmnet: VMNET_SO_BINDTOHUB: port: paddr 00:50:56:ed:e7:3b
+vmnet: Hub 8
+vmnet: 	Port 0
+vmnet: 	Port 1
+vmnet: 	Port 2
+vmioplug: Loaded @ 0xffffff7f99874d82: Info 0xffffff7f998770c0 Name com.vmware.kext.vmioplug.10.1.24 Version 10.1.24 build-1040386 at Mar  4 2013 16:03:09
+vmnet: VMNetDisconnect called for port 0xffffff803526f600
+vmnet: VNetUserIfFree: freeing userIf at 0xffffff803526f600.
+vmnet: netif-vmnet1: SIOCSIFFLAGS: 0x8862
+vmnet: VMNetDisconnect called for port 0xffffff802d99c200
+vmnet: netif-vmnet1: SIOCPROTODETACH failed: 16.
+vmnet: netif-vmnet1: Deleting protocol 2.
+vmnet: netif-vmnet1: Detaching...
+vmnet: netif-vmnet1: Detached.
+vmnet: Freeing hub at 0xffffff80362a9000.
+vmnet: VMNetDisconnect called for port 0xffffff8035276e00
+vmnet: VNetUserIfFree: freeing userIf at 0xffffff8035276e00.
+vmnet: VMNetDisconnect called for port 0xffffff8029db0400
+vmnet: VNetUserIfFree: freeing userIf at 0xffffff8029db0400.
+vmnet: netif-vmnet8: SIOCSIFFLAGS: 0x8862
+vmnet: VMNetDisconnect called for port 0xffffff802e895600
+vmnet: netif-vmnet8: SIOCPROTODETACH failed: 16.
+vmnet: netif-vmnet8: Deleting protocol 2.
+vmnet: netif-vmnet8: Detaching...
+vmnet: netif-vmnet8: Detached.
+vmnet: Freeing hub at 0xffffff80362a4000.
+vmnet: VMNetDisconnect called for port 0xffffff802e8bb800
+vmnet: bridge-en1: filter detached
+vmnet: bridge-en1: down
+vmnet: bridge-en1: detached
+vmnet: Freeing hub at 0xffffff80362ac000.
+vmmon: Removing module.
+vmmon: Timer thread stopping...
+vmmon: Timer thread stopped.
+vmmon: Module removed.
+vmnet: Removing module.
+vmnet: VMNet_Stop freeing gOSMallocTag
+vmnet: Module removed.
+vsock: Removing module.
+vsock: End workloop.
+vsock: Module removed.
+vmci: Removing module.
+vmci: End helper queue thread.
+vmci: Module removed.
+CODE SIGNING: cs_invalid_page(0x1000): p=913[GoogleSoftwareUp] clearing CS_VALID
+nspace-handler-set-snapshot-time: 1399322274
+nspace-handler-set-snapshot-time: 1399322274
+CODE SIGNING: cs_invalid_page(0x1000): p=1138[GoogleSoftwareUp] clearing CS_VALID
+HFS: Vol: Install Google Drive Very Low Disk: freeblks: 0, dangerlimit: 367
+CODE SIGNING: cs_invalid_page(0x1000): p=1169[ksadmin] clearing CS_VALID
+CODE SIGNING: cs_invalid_page(0x1000): p=1197[ksadmin] clearing CS_VALID
+CODE SIGNING: cs_invalid_page(0x1000): p=1199[ksadmin] clearing CS_VALID
+CODE SIGNING: cs_invalid_page(0x1000): p=1200[ksadmin] clearing CS_VALID
+         0 [Level 7] [ReadUID 0] [Facility messagetracer] [com.apple.message.domain com.apple.kernel.external_modification] [com.apple.message.signature Google Drive Ico(81DDB023-CC5F-423C-3EB6-6CE39016BCFA)] [com.apple.message.signature2 Finder(5AF2416D-6AF0-386F-86D5-A276C74780E6)] [com.apple.message.result noop] 
+nspace-handler-set-snapshot-time: 1399325910
+nspace-handler-set-snapshot-time: 1399325910
+Sandbox: sandboxd(1230) deny mach-lookup com.apple.coresymbolicationd
+MacAuthEvent en1   Auth result for: f8:ed:a5:b3:0d:90  MAC AUTH succeeded
+wlEvent: en1 en1 Link UP virtIf = 0
+wl0: Roamed or switched channel, reason #8, bssid f8:ed:a5:b3:0d:90
+en1: BSSID changed to f8:ed:a5:b3:0d:90
+en1::IO80211Interface::postMessage bssid changed
+AirPort: RSN handshake complete on en1
+CODE SIGNING: cs_invalid_page(0x1000): p=1249[GoogleSoftwareUp] clearing CS_VALID
+nspace-handler-set-snapshot-time: 1399329545
+nspace-handler-set-snapshot-time: 1399329546
+CODE SIGNING: cs_invalid_page(0x1000): p=1452[GoogleSoftwareUp] clearing CS_VALID
+nspace-handler-set-snapshot-time: 1399333181
+nspace-handler-set-snapshot-time: 1399333181
+CODE SIGNING: cs_invalid_page(0x1000): p=1488[GoogleSoftwareUp] clearing CS_VALID
+nspace-handler-set-snapshot-time: 1399336817
+nspace-handler-set-snapshot-time: 1399336817
+CODE SIGNING: cs_invalid_page(0x1000): p=1516[GoogleSoftwareUp] clearing CS_VALID
+nspace-handler-set-snapshot-time: 1399340452
+nspace-handler-set-snapshot-time: 1399340452
+CODE SIGNING: cs_invalid_page(0x1000): p=1568[GoogleSoftwareUp] clearing CS_VALID
+nspace-handler-set-snapshot-time: 1399344052
+nspace-handler-set-snapshot-time: 1399344052
+CODE SIGNING: cs_invalid_page(0x1000): p=1597[GoogleSoftwareUp] clearing CS_VALID
+nspace-handler-set-snapshot-time: 1399347688
+nspace-handler-set-snapshot-time: 1399347688
+CODE SIGNING: cs_invalid_page(0x1000): p=1649[GoogleSoftwareUp] clearing CS_VALID
+Sandbox: sandboxd(1658) deny mach-lookup com.apple.coresymbolicationd
+nspace-handler-set-snapshot-time: 1399351323
+nspace-handler-set-snapshot-time: 1399351324
+CODE SIGNING: cs_invalid_page(0x1000): p=1705[GoogleSoftwareUp] clearing CS_VALID
+(default pager): [KERNEL]: ps_allocate_cluster - send HI_WAT_ALERT
+macx_swapon SUCCESS
+memorystatus_thread: idle exiting pid 1662 [printtool]
+nspace-handler-set-snapshot-time: 1399354959
+nspace-handler-set-snapshot-time: 1399354959
+hibernate image path: /var/vm/sleepimage
+AirPort_Brcm43xx::powerChange: System Sleep 
+hibernate_alloc_pages act 921842, inact 672651, anon 513132, throt 0, spec 172314, wire 286506, wireinit 165044
+hibernate_setup(0) took 0 ms
+sizeof(IOHibernateImageHeader) == 512
+kern_open_file_for_direct_io(0) took 0 ms
+Opened file /var/vm/sleepimage, size 8589934592, partition base 0x0, maxio 2000000 ssd 1
+hibernate image major 1, minor 0, blocksize 512, pollers 5
+         0 [Time 1399356747] [Message hibernate_page_list_setall(preflight 0) start 0xffffff80ea1da000, 0xffffff80ea21a000
+hibernate_page_list_setall time: 733 ms
+pages 2035805, wire 244020, act 745412, inact 8249, cleaned 0 spec 2448, zf 473960, throt 0, could discard act 177793 inact 210738 purgeable 11433 spec 132766 cleaned 28986
+hibernate_page_list_setall found pageCount 1474089
+IOHibernatePollerOpen, ml_get_interrupts_enabled 0
+IOHibernatePollerOpen(0)
+encryptStart 13290
+bitmap_size 0x3f7a0, previewSize 0x20d068, writing 1473297 pages @ 0x25fa98
+encryptEnd 9679000
+image1Size 0x12c72e00, encryptStart1 0x13290, End1 0x9679000
+encryptStart 12c72e00
+encryptEnd a47e6200
+PMStats: Hibernate write took 35225 ms
+all time: 35225 ms, comp bytes: 6034931712 time: 6323 ms 910 Mb/s, crypt bytes: 2602406256 time: 3513 ms 706 Mb/s, 
+image 2759746048 (32%), uncompressed 6034931712 (424796), compressed 2747172304 (45%), sum1 b0524db9, sum2 7e834100
+wired_pages_encrypted 148679, wired_pages_clear 94624, dirty_pages_encrypted 1230069
+hibernate_write_image done(0)
+sleep
+Wake reason: EC LID0
+SMC::smcHandleInterruptEvent WARNING status=0x0 (0x40 not set) notif=0x0
+AirPort_Brcm43xx::powerChange: System Wake - Full Wake/ Dark Wake / Maintenance wake
+HID tickle 41 ms
+Previous Sleep Cause: 5
+wlEvent: en1 en1 Link DOWN virtIf = 0
+AirPort: Link Down on en1. Reason 8 (Disassociated because station leaving).
+en1::IO80211Interface::postMessage bssid changed
+en1: 802.11d country code set to 'X0'.
+en1: Supported channels 1 2 3 4 5 6 7 8 9 10 11 36 40 44 48 52 56 60 64 100 104 108 112 116 120 124 128 132 136 140 149 153 157 161 165
+en1: 802.11d country code set to 'US'.
+en1: Supported channels 1 2 3 4 5 6 7 8 9 10 11 36 40 44 48 52 56 60 64 100 104 108 112 116 120 124 128 132 136 140 149 153 157 161 165
+MacAuthEvent en1   Auth result for: f8:ed:a5:b3:0d:90  MAC AUTH succeeded
+wlEvent: en1 en1 Link UP virtIf = 0
+AirPort: Link Up on en1
+en1: BSSID changed to f8:ed:a5:b3:0d:90
+en1::IO80211Interface::postMessage bssid changed
+AirPort: RSN handshake complete on en1
+nspace-handler-set-snapshot-time: 1399386998
+nspace-handler-set-snapshot-time: 1399386998
+CODE SIGNING: cs_invalid_page(0x1000): p=1834[GoogleSoftwareUp] clearing CS_VALID
+MacAuthEvent en1   Auth result for: f8:ed:a5:b3:0d:90  MAC AUTH succeeded
+wlEvent: en1 en1 Link UP virtIf = 0
+wl0: Roamed or switched channel, reason #8, bssid f8:ed:a5:b3:0d:90
+en1: BSSID changed to f8:ed:a5:b3:0d:90
+en1::IO80211Interface::postMessage bssid changed
+AirPort: RSN handshake complete on en1
+CODE SIGNING: cs_invalid_page(0x1000): p=1880[GoogleSoftwareUp] clearing CS_VALID
+nspace-handler-set-snapshot-time: 1399390634
+nspace-handler-set-snapshot-time: 1399390635
+CODE SIGNING: cs_invalid_page(0x1000): p=1918[GoogleSoftwareUp] clearing CS_VALID
+nspace-handler-set-snapshot-time: 1399394271
+nspace-handler-set-snapshot-time: 1399394271
+CODE SIGNING: cs_invalid_page(0x1000): p=2007[GoogleSoftwareUp] clearing CS_VALID
+nspace-handler-set-snapshot-time: 1399397906
+nspace-handler-set-snapshot-time: 1399397908
+CODE SIGNING: cs_invalid_page(0x1000): p=2040[GoogleSoftwareUp] clearing CS_VALID
+nspace-handler-set-snapshot-time: 1399401543
+nspace-handler-set-snapshot-time: 1399401543
+Sandbox: sandboxd(2103) deny mach-lookup com.apple.coresymbolicationd
+considerRebuildOfPrelinkedKernel prebuild rebuild has expired
+ttyioss12000000: enqueueData rtn (e00002d8)
+ttyioss12000000: enqueueData rtn (e00002d8)
+ttyioss12000000: enqueueData rtn (e00002d8)
+ttyioss12000001: enqueueData rtn (e00002d8)
+ttyioss12000001: enqueueData rtn (e00002d8)
+ttyioss12000001: enqueueData rtn (e00002d8)
+ttyioss12000002: enqueueData rtn (e00002d8)
+ttyioss12000002: enqueueData rtn (e00002d8)
+ttyioss12000002: enqueueData rtn (e00002d8)
+ttyioss12000003: enqueueData rtn (e00002d8)
+ttyioss12000003: enqueueData rtn (e00002d8)
+ttyioss12000003: enqueueData rtn (e00002d8)
+ttyioss12000000: enqueueData rtn (e00002d8)
+ttyioss12000000: enqueueData rtn (e00002d8)
+ttyioss12000000: enqueueData rtn (e00002d8)
+ttyioss12000006: enqueueData rtn (e00002d8)
+ttyioss12000006: enqueueData rtn (e00002d8)
+ttyioss12000006: enqueueData rtn (e00002d8)
+ttyioss12000007: enqueueData rtn (e00002d8)
+ttyioss12000007: enqueueData rtn (e00002d8)
+ttyioss12000007: enqueueData rtn (e00002d8)
+ttyioss12000000: enqueueData rtn (e00002d8)
+ttyioss12000000: enqueueData rtn (e00002d8)
+ttyioss12000000: enqueueData rtn (e00002d8)
