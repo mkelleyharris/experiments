@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>AJAX Demos</title>
+
+<script type="text/javascript" src="ajax.js"></script>
+
+</head>
+
+<body>
+	
+<h3>AJAX Demos</h3>
+<hr>
+<h4>Send Ajax Message to Server.</h4> 
+<p>The server echo's the message Back, plus more info.</p>
+<p>Tools: Client: Javascript; &nbsp; Server: PHP</p>
+<input id="testmsg" type="text" value="Msg To Server">
+<button onclick="talktoServer()">Send Msg to Server</button>
+<br><br>
+<div id="msg_display" style="{ background: yellow; font-weight: bold; }">The data from the server will replace this line.</div>
+<br>
+<hr>
+
+
+<h4>Get a List From Server</h4> 
+<p>Tools: Client: Javascript; &nbsp;  Server: PHP</p>
+<button onclick="getFileContentsServer()">Get List</button>
+<br><br>
+<div id="msg2_display" style="{ background: yellow; font-weight: bold; }">The list from the server will replace this line.</div>
+<br>
+<hr>
+
+
+</body>
+</html>
